@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Store</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <aside class="contact-us">
+            <ul class="list-unstyled ">
+                <li><a href="#footer"><i
+                            class="fa-solid fa-square-phone-flip first"
+                            title="CONTACT US"></i></a></li>
+                <li><a href="#c"><i class="fa-brands fa-facebook-f"
+                            title="facebook"></i></a></li>
+                <li><a href="#c"><i class="fa-brands fa-twitter"
+                            title="twitter"></i></a></li>
+                <li><a href="#c"><i class="fa-brands fa-instagram"
+                            title="instagram"></i></a></li>
+            </ul>
+        </aside>
+
+        <header class="header">
+            <!-- start navbar  -->
+            <nav class="navbar navbar-expand-md fixed-top navbar-default">
+                <div class="container-fluid">
+                    <!-- logo -->
+                    <img src="images/logo.png" alt="logo" class="Logo"
+                        style="width:70px; height:60px;">
+                    <a class="navbar-brand mx-lg-3 px-2 glow mx-0" href="#"
+                        style="border-right: 1px solid white; color: #ff5c35">Mobile
+                        Oasis</a>
+                    <button class="navbar-toggler main-color mr-2" type="button"
+                        data-toggle="collapse" data-target="#navbar"
+                        aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <!-- head links -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active px-lg-4"
+                                    aria-current="page"
+                                    href="#carouselExampleCaptions">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-lg-4"
+                                    href="#about">About</a>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a class="dropdown-toggle nav-link"
+                                    data-toggle="dropdown" href="#">Devices
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="devices-items"><a href="#"
+                                            class="device-link">Mobiles</a></li>
+                                    <li class="devices-items"><a href="#"
+                                            class="device-link">Laptops</a></li>
+                                    <li class="devices-items"><a href="#"
+                                            class="device-link">tablets</a></li>
+                                    <li class="devices-items"><a href="#"
+                                            class="device-link">Headphones</a></li>
+                                    <li class="devices-items"><a href="#"
+                                            class="device-link">AirPods</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  px-lg-4"
+                                    href="#team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  px-lg-4"
+                                    href="#news">News</a>
+                            </li>
+                        </ul>
+                        <!-- buttons login search  -->
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 mr-3"
+                                type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-info mx-1"
+                                type="submit">Search</button>
+                            <button class="btn btn-outline-info mx-1 glow"
+                                type="button" data-toggle="modal"
+                                data-target="#myModal">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-light"
+                            id="myModalLabel">Login</h1>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1"
+                                    class="form-label">Email
+                                    address</label>
+                                <input type="email" class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text main-color">We'll
+                                    never share your email with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="submit"
+                            class="btn btn-info text-light">Login</button>
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="home">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <!-- item -1 -->
+                    <div class="carousel-item active">
+                        <img src="images/home1.jpg" class="w-100 img-fluid "
+                            alt="img">
+                        <div
+                            class="carousel-caption text-center mb-md-5 pt-md-4 ">
+                            <h3>Discover our store</h3>
+                            <p>Many monkey species are tree-dwelling</p>
+                            <p><a class="btn text-white" href="#">Learn
+                                    more</a></p>
+                        </div>
+                    </div>
+                    <!-- item -2 -->
+                    <div class="carousel-item">
+                        <img src="images/home2.jpeg" class="w-100 img-fluid "
+                            alt="img">
+                        <div
+                            class="carousel-caption text-center mb-md-5 pt-md-4 ">
+                            <h3>Tablets</h3>
+                            <p>Many monkey species are tree-dwelling</p>
+                            <p><a class="btn text-white"
+                                    href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                    <!-- item -3 -->
+                    <div class="carousel-item">
+                        <img src="images/home3.jpg" class="w-100 img-fluid "
+                            alt="img">
+                        <div
+                            class="carousel-caption text-center mb-md-5 pt-md-4 ">
+                            <h3>Mobiles</h3>
+                            <p>Many monkey species are tree-dwelling</p>
+                            <p><a class="btn text-white"
+                                    href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </main>
+
+        <section class="difination px-5 py-3 border border-dark">
+            <h3 class="main-color">Welcome to Our Store</h3>
+            <p>Where every visit is an opportunity to discover something
+                special! Step inside and explore a world of unique finds and
+                delightful treasures waiting just for you.</p>
+            <button class="btn p-2">Learn More</button>
+        </section>
+
+        <hr>
+
+        <section class="bio p-4">
+            <h1 class="text-center">Popular Brands</h1>
+            <div id="accordion" class="mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link main-color" data-toggle="collapse"
+                            href="#collapseOne">
+                            Apple
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link main-color" data-toggle="collapse"
+                            href="#collapseTwo">
+                            Samsung
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link main-color" data-toggle="collapse"
+                            href="#collapseThree">
+                            Oppo
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="fixed-img mb-5">
+            </div>
+            <div class="service">
+                <h3>Mobile & Tablets offers</h3>
+            </div>
+            <div class="offers-items row">
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/wearables_en_mob.jpg" alt="wearables">
+                    <div class="item-content">
+                        <h4 class="card-title">Wearables</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/sound_en_web-1.jpg" alt="sound">
+                    <div class="item-content">
+                        <h4 class="card-title">Sound</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/tws_en_web-1.jpg" alt="airpods">
+                    <div class="item-content">
+                        <h4 class="card-title">Airpods</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/chargers_en_web-1.jpg" alt="charges">
+                    <div class="item-content">
+                        <h4 class="card-title">Charges</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/wearables_en_mob.jpg" alt>
+                    <div class="item-content">
+                        <h4 class="card-title">Wearables</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/sound_en_web-1.jpg" alt>
+                    <div class="item-content">
+                        <h4 class="card-title">Sound</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixed-img2">
+            </div>
+
+        </section>
+
+        <section class="pt-5">
+            <div class="service">
+                <h3>Home appliances offers</h3>
+            </div>
+            <div class="offers-items row">
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/microwaves_en_web.jpg" alt="wearables">
+                    <div class="item-content">
+                        <h4 class="card-title">Microwaves</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/refrigerator_en_web.jpg" alt="sound">
+                    <div class="item-content">
+                        <h4 class="card-title">Refrigerator</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/washing_machine_en_web.jpg" alt="airpods">
+                    <div class="item-content">
+                        <h4 class="card-title">Washing Machine</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/water_heater_en_web.jpg" alt="charges">
+                    <div class="item-content">
+                        <h4 class="card-title">Water Heater</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/microwaves_en_web.jpg" alt>
+                    <div class="item-content">
+                        <h4 class="card-title">Microwaves</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-sm-5">
+                    <img src="images/refrigerator_en_web.jpg" alt>
+                    <div class="item-content">
+                        <h4 class="card-title">Refrigerator</h4>
+                        <button class="btn service-btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="service">
+                <h3>Best Offers</h3>
+            </div>
+            <div class="posts">
+                <div class="post p-3"
+                    style="background-image: url(images/iPhone-12.webp);">
+                    <div class="post-content p-3">
+                        <h4>IPhone 12 128GB 5G</h4>
+                        <p><i class="fa-solid fa-shop"></i> 2 in stock</p>
+                        <div class="post-info">
+                            <img src="images/iPhone-12.webp" alt width="80px"
+                                height="80px">
+                            <p>IPhone 12<br>Red color</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post p-3"
+                    style="background-image: url(images/iPhone_13.webp);">
+                    <div class="post-content p-3">
+                        <h4>IPhone 13 128GB 4GB-RAM 5G</h4>
+                        <p><i class="fa-solid fa-shop"></i> 4 in stock</p>
+                        <div class="post-info">
+                            <img src="images/iPhone_13.webp" alt width="80px"
+                                height="80px">
+                            <p>IPhone 13<br>White color</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post p-3"
+                    style="background-image: url(images/ma081-17-9.jpg);">
+                    <div class="post-content p-3">
+                        <h4>IPhone 14 128GB 5G</h4>
+                        <p><i class="fa-solid fa-shop"></i> 5 in stock</p>
+                        <div class="post-info">
+                            <img src="images/ma081-17-9.jpg" alt width="80px"
+                                height="80px">
+                            <p>IPhone 14<br>Black color</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="branches container">
+            <div class="service">
+                <h3>Our Branches</h3>
+            </div>
+
+            <div class="branches-item row align-items-center mt-2"
+                style="background-color: #f3f3f3;">
+                <div class="text-content col-md-8 p-3 pl-5">
+                    <h3 style="color: #ff5c35;">Cairo</h3>
+                    <p class="mb-1"><i class="fa-solid fa-globe"></i> Address:
+                        123 Nile Street, Cairo</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone"></i> Phone: +20
+                        2 5555 1234</p>
+                    <span class="d-block"
+                        style="width:60px; height:3px; background-color: #ff5c35;"></span>
+                    <p class="my-3">Welcome to our Cairo Branch, your
+                        one-stop destination for the latest mobile devices,
+                        cutting-edge TVs, and a wide range of electronic
+                        gadgets. Conveniently located at 123 Nile Street in the
+                        vibrant city of Cairo, our branch is designed to cater
+                        to all your tech needs.</p>
+                    <div class="actions">
+                        <button class="btn btn-custom"><i
+                                class="fa-solid fa-envelope"></i> Contact
+                            US</button>
+                        <button class="btn btn-custom"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Location</button>
+                    </div>
+                </div>
+                <div class="news-item-img col-md-4"
+                    style="height:274px; margin:0; padding:0;">
+                    <img src="images/branch1.jpg" alt
+                        style="width: 100%; height: 100%;">
+                </div>
+            </div>
+
+            <div class="branches-item row align-items-center mt-5"
+                style="background-color: #f3f3f3;">
+                <div class="news-item-img col-md-4"
+                    style="height:274px; margin:0; padding:0;">
+                    <img src="images/branch2.jpg" alt
+                        style="width: 100%; height: 100%;">
+                </div>
+                <div class="text-content col-md-8 p-3 pl-5">
+                    <h3 style="color: #ff5c35;">Alexandria </h3>
+                    <p class="mb-1"><i class="fa-solid fa-globe"></i> Address:
+                        456 Mediterranean Avenue, Alexandria</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone"></i> Phone: +20
+                        3 5555 5678</p>
+                    <span class="d-block"
+                        style="width:60px; height:3px; background-color: #ff5c35;"></span>
+                    <p class="my-3">Welcome to our Alexandria Branch, a tech
+                        enthusiast's paradise nestled at 456 Mediterranean
+                        Avenue in the vibrant city of Alexandria. Discover a
+                        world of cutting-edge mobile devices, top-of-the-line
+                        TVs, and a wide array of electronic gadgets that cater
+                        to your every need.</p>
+                    <div class="actions">
+                        <button class="btn btn-custom"><i
+                                class="fa-solid fa-envelope"></i> Contact
+                            US</button>
+                        <button class="btn btn-custom"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Location</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="branches-item row align-items-center mt-5"
+                style="background-color: #f3f3f3;">
+                <div class="text-content col-md-8 p-3 pl-5">
+                    <h3 style="color: #ff5c35;">Giza</h3>
+                    <p class="mb-1"><i class="fa-solid fa-globe"></i> Address:
+                        789 Sphinx Road, Giza</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone"></i> Phone: +20
+                        2 5555 9012</p>
+                    <span class="d-block"
+                        style="width:60px; height:3px; background-color: #ff5c35;"></span>
+                    <p class="my-3">Experience tech innovation like never before
+                        at our Giza Branch located at 789 Sphinx Road in the
+                        heart of Giza. From state-of-the-art mobile devices to
+                        high-definition TVs and a diverse range of electronic
+                        accessories, our branch is your ultimate destination for
+                        all things tech.</p>
+                    <div class="actions">
+                        <button class="btn btn-custom"><i
+                                class="fa-solid fa-envelope"></i> Contact
+                            US</button>
+                        <button class="btn btn-custom"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Location</button>
+                    </div>
+                </div>
+                <div class="news-item-img col-md-4"
+                    style="height:274px; margin:0; padding:0;">
+                    <img src="images/branch3.jpg" alt
+                        style="width: 100%; height: 100%;">
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="join-us py-4">
+            <div class="service">
+                <h3>Contact US</h3>
+            </div>
+            <div class="container">
+                <div class="contact-items row pt-3 d-flex justify-content-center align-items-center">
+                    <div class="contact-item text-center col-xl-3 col-lg-3 col-md-5 col-sm-12 mr-4 mb-4 p-3">
+                        <h4 class="secondary-color">Subscribe Now</h4>
+                        <img src="images/facebook-icon-removebg-preview.png" alt="" width="130px" height="130px">
+                        <a href="#" class="d-block secondary-color">Go To Link</a>
+                    </div>
+                    <div class="contact-item text-center col-xl-3 col-lg-3 col-md-5 col-sm-12 mr-4 mb-4 p-3">
+                        <h4 class="secondary-color">Subscribe Now</h4>
+                        <img src="images/pngtree-instagram-icon-instagram-logo-png-image_3584852-removebg-preview.png" alt="" width="130px" height="130px">
+                        <a href="#" class="d-block secondary-color">Go To Link</a>
+                    </div>
+                    <div class="contact-item text-center col-xl-3 col-lg-3 col-md-5 col-sm-12 mr-4 mb-4 p-3">
+                        <h4 class="secondary-color">Subscribe Now</h4>
+                        <img src="images/twitter-removebg-preview.png" alt="" width="130px" height="130px">
+                        <a href="#" class="d-block secondary-color">Go To Link</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer bg-dark text-white p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-4">
+                        <h5>BE THE FIRST TO KNOW</h5>
+                        <p>Subscribe and Get all the latest information on Sales and Offers now</p>
+                        <form class="form-inline justify-content-center mb-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit" style="color: #fff; background-color:#ff5c35;">SEND</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-uppercase main-color">Contact</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">About us</a></li>
+                            <li><a href="#" class="text-white">Contact us</a></li>
+                            <li>Phone: <a href="tel:11111" style="color: #fff; text-decoration:none">11111</a></li>
+                            <li>Email: <a href="mailto:info@mobileOasis.com.eg" class="text-white">info@mobileOasis.com.eg</a></li>
+                            <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3">
+                        <h6 class="text-uppercase main-color">My Account</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Profile</a></li>
+                            <li><a href="#" class="text-white">Order history</a></li>
+                            <li><a href="#" class="text-white">Track your order</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3">
+                        <h6 class="text-uppercase main-color">Most Researched</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Laptop</a></li>
+                            <li><a href="#" class="text-white">Mobile Devices</a></li>
+                            <li><a href="#" class="text-white">Wearables</a></li>
+                            <li><a href="#" class="text-white">Personal Care For Him</a></li>
+                            <li><a href="#" class="text-white">TV Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3">
+                        <p>Stores Working Days</p>
+                        <p>Daily / 10:00AM to 11:00PM</p>
+                        <div class="mt-2">
+                            <p>Follow us on</p>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- jQuery library -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <!-- Popper JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
